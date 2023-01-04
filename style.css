@@ -1,0 +1,156 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: rgb(221, 242, 33);
+}
+a {
+    text-decoration: none;
+}
+header{
+    background-color: black;
+    height: 100%;
+    
+}
+.shapes{
+    position: absolute;
+    right: 0%;
+    width: 60%;
+    height: 96.5%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.APR {
+    display: flex;
+    gap: 25px;
+    color: white;
+    margin: 20px 80px 20px;
+}
+.APR a {
+    color: white;
+}
+.contactButton > input {
+    margin: 20px 80px 20px;
+    color: white;
+    background-color: black;
+    padding: 7px 20px;
+    border: 0.5px solid gray;
+}
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+.left {
+    color: white;
+    margin: 80px;
+    inline-size: 300px;
+}
+.left > h1 {
+font-size: 60px;
+margin: 20px 0px 20px 0px;
+}
+/* .downButton {
+    background-color: black;
+    align-items: center;
+} */
+.downbutt {
+    display: flex;
+    justify-content: center;
+}
+.bakerPhoto {
+    position: absolute;
+    right: 150px;
+}
+.sectionOne {
+    display: flex;
+    background-color: rgba(245, 211, 171, 1);
+}
+.BSMphotos{
+width: 40%;    
+margin: 5%;    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.blackImage {
+    position: absolute;
+}
+.grey {
+    position: relative;
+    top: 250px;
+    left: 600px;
+    
+
+
+    
+}
+.dost {
+    position: absolute;
+}
+.LastViewBack {
+    display: flex;
+}
+.BSM{
+    margin-top: 80px;
+}
+.BSM > h5 {
+    margin-bottom: 10px;
+}
+.BSM > h1 {
+    font-size: 56px;
+    max-width: 370px;
+}
+.BSM > p {
+    margin: 60px  0px 10px;
+}
+.LastViewBack {
+gap: 20px;
+    
+}
+
+
+.LastViewBackRightP {
+    color: gray;
+    max-width: 370px;
+    padding: 15px 0px 40px;
+}
+.LastViewBackRight :nth-child(4) {
+    padding: 10px 0px;
+}
+.FreshNaturalTasty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionTwo{
+    background-color: rgba(245, 211, 171, 1);
+}
+.sectionTwoH {
+    display: flex;
+    justify-content: center;
+}
+.sectionTwo > h1 {
+font-size: 56px;  
+margin: 18px;
+
+}
+.box {
+    background-color: white;
+    width: 370px;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.box:hover {
+    width: 400px;
+    height: 416px;
+    background-color:rgba(158, 173, 141, 1);
+    transition: 0.5s;
+}
