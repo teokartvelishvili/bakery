@@ -4,10 +4,19 @@ padding: 0;
 box-sizing: border-box;
 }
 body {
-    background-color: rgb(221, 242, 33);
+background-color: yellow;
 }
 a {
     text-decoration: none;
+}
+.black {
+    background-color: black;
+}
+.peach {
+    background-color: rgba(245, 211, 171, 1);
+}
+.h56 {
+    font-size: 56px;
 }
 header{
     background-color: black;
@@ -74,8 +83,9 @@ margin: 20px 0px 20px 0px;
 width: 40%;    
 margin: 5%;    
 display: flex;
-justify-content: center;
-align-items: center;
+/* justify-content: center;
+align-items: center; */
+place-content: center;
 }
 .blackImage {
     position: absolute;
@@ -84,10 +94,6 @@ align-items: center;
     position: relative;
     top: 250px;
     left: 600px;
-    
-
-
-    
 }
 .dost {
     position: absolute;
@@ -124,8 +130,9 @@ gap: 20px;
 }
 .FreshNaturalTasty {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
 }
 .sectionTwo{
     background-color: rgba(245, 211, 171, 1);
@@ -144,8 +151,9 @@ margin: 18px;
     width: 370px;
     height: 400px;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    place-content: center;
     padding: 40px;
 }
 .box:hover {
@@ -153,4 +161,122 @@ margin: 18px;
     height: 416px;
     background-color:rgba(158, 173, 141, 1);
     transition: 0.5s;
+}
+.sectionThree {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-image: url(./images/Group\ 3.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.audio {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
+    margin: 200px;
+}
+.audio:hover {
+    box-shadow: 0px 0px 1px 4px white;
+    border-radius: 50%;
+}
+.audio:active {
+
+}
+.sectionThree  > h1 {
+    color: white;
+}
+.sectionThree > p {
+    color: white;
+}
+
+.sectionThreeH {
+    margin: 200px 0px 0px 300px;
+    max-width: 400px;
+    color: white;
+}
+
+.sectionFour > h1 {
+    max-width: 400px;
+    margin: 0px 0px 40px 160px;
+}
+.sectionFour > p {
+    padding: 50px 40px 0px 160px;
+}
+.sectionFourBoxs {
+    width:  80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    justify-items: center;
+    gap: 34px 0px;
+    margin: 40px 0px 40px  150px ;
+    /* margin-left: 150px; */
+    
+    
+}
+.BFEM {
+    height: 448px;
+    width: 370px;
+    background-color: rgb(148, 142, 142);
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.boxOne {
+    grid-column-start: span 2;
+    width: 95%; 
+    color: white;
+    background-image: url(./images/assortment-baked-bread-scaled.jpg); 
+}
+.boxOne .boxOneH {
+    margin: 200px 40px 40px 40px;
+    gap: 20px;
+    max-width: 300px;
+}
+.boxOneH h1 {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.boxOneH p {
+    color: rgba(255, 255, 255, 0.503);
+}
+.BFEM {
+    background-size: cover;
+    background-position: center;
+}
+.BFEM footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+.BFEM h2 {
+    font-size: 24px;
+    margin: 20px 0px 0px 0px;
+}
+.price {
+font-size: 40px;
+font-family: ultra;
+}
+
+.boxTwo {
+    background: url(./images/Country-White-Bread_.jpg);
+    background-size: contain;
+}
+.boxThree {
+    background-image: url(./images/chocolate-cupcakes.jpg);
+}
+.boxFour {
+    background: url(./images/06112019_BiscuitIntl.jpg);
+}
+.boxFive {
+    background: url(./images/brioche-597b5f8.jpg);
 }
