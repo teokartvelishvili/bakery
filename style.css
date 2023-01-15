@@ -155,10 +155,12 @@ margin: 18px;
     /* align-items: center; */
     place-content: center;
     padding: 40px;
+    margin-bottom: 200px;
 }
 .box:hover {
     width: 400px;
     height: 416px;
+    transform: translateY(-6px);
     background-color:rgba(158, 173, 141, 1);
     transition: 0.5s;
 }
@@ -172,12 +174,17 @@ margin: 18px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+#play {
+    border: none;
+    background-color: inherit;
+}
+#audioval {
+    visibility: hidden;
+    }
 .audio {
     width: 160px;
     height: 160px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     place-content: center;
     margin: 200px;
 }

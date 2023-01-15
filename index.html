@@ -87,9 +87,14 @@
         <section class="sectionThree">
         <div class="audio">
             <!-- <audio controls>
-                <source  src="./audio/bakery_-_Yshwa_(2).mp3" type="audio/ogg">
+                <source  src="./audio/bakery-Yshwa.mp3" type="audio/ogg">
             </audio> -->
-            <img src="./images/play.png" alt="play">
+            <button id="play" type="button" onClick="Play()"><img src="./images/play.png" alt=""> </button>
+            <audio controls id="audioval">
+            <source src="./audio/bakery-Yshwa.mp3" type="audio/mp3">
+            </audio>
+
+            <!-- <button id="play"><img src="./images/play.png" alt="play"></button> -->
         </div>
         <div class="sectionThreeH">
                 <p>Our Video</p>
@@ -97,6 +102,8 @@
                     Every Piece</h1> 
                 </div> 
         </section>
+
+        
         <section class="sectionFour peach">
         <p>Our Products</p>
         <h1 class="h56">Baked Fresh
@@ -152,5 +159,9 @@
             </footer></div>
         </div>
         </section>
+
+
+
+<script src="./script.js"></script>
 </body>
 </html>
