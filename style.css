@@ -18,6 +18,11 @@ a {
 .h56 {
     font-size: 56px;
 }
+.white {
+    color: white;
+}
+
+
 header{
     background-color: black;
     height: 100%;
@@ -32,6 +37,7 @@ header{
 nav {
     display: flex;
     justify-content: space-between;
+
 }
 .APR {
     display: flex;
@@ -66,6 +72,7 @@ margin: 20px 0px 20px 0px;
 /* .downButton {
     background-color: black;
     align-items: center;
+    cursor: pointer;
 } */
 .downbutt {
     display: flex;
@@ -75,6 +82,8 @@ margin: 20px 0px 20px 0px;
     position: absolute;
     right: 150px;
 }
+
+
 .sectionOne {
     display: flex;
     background-color: rgba(245, 211, 171, 1);
@@ -83,8 +92,6 @@ margin: 20px 0px 20px 0px;
 width: 40%;    
 margin: 5%;    
 display: flex;
-/* justify-content: center;
-align-items: center; */
 place-content: center;
 }
 .blackImage {
@@ -118,8 +125,6 @@ place-content: center;
 gap: 20px;
     
 }
-
-
 .LastViewBackRightP {
     color: gray;
     max-width: 370px;
@@ -128,14 +133,15 @@ gap: 20px;
 .LastViewBackRight :nth-child(4) {
     padding: 10px 0px;
 }
-.FreshNaturalTasty {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    place-content: center;
-}
+
+
+
 .sectionTwo{
     background-color: rgba(245, 211, 171, 1);
+}
+.animBoxs {
+    display: flex;
+    place-content: center;
 }
 .sectionTwoH {
     display: flex;
@@ -144,7 +150,6 @@ gap: 20px;
 .sectionTwo > h1 {
 font-size: 56px;  
 margin: 18px;
-
 }
 .box {
     background-color: white;
@@ -162,15 +167,19 @@ margin: 18px;
     height: 416px;
     transform: translateY(-6px);
     background-color:rgba(158, 173, 141, 1);
-    transition: 0.5s;
+    transition: 0s;
+    background-image: url(./images/yellowDott.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+
 }
+
 .sectionThree {
     display: flex;
     width: 100%;
     height: 500px;
     display: flex;
     background-image: url(./images/Group\ 3.png);
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -192,21 +201,19 @@ margin: 18px;
     box-shadow: 0px 0px 1px 4px white;
     border-radius: 50%;
 }
-.audio:active {
-
-}
 .sectionThree  > h1 {
     color: white;
 }
 .sectionThree > p {
     color: white;
 }
-
 .sectionThreeH {
     margin: 200px 0px 0px 300px;
     max-width: 400px;
     color: white;
 }
+
+
 
 .sectionFour > h1 {
     max-width: 400px;
@@ -224,9 +231,6 @@ margin: 18px;
     justify-items: center;
     gap: 34px 0px;
     margin: 40px 0px 40px  150px ;
-    /* margin-left: 150px; */
-    
-    
 }
 .BFEM {
     height: 448px;
@@ -286,4 +290,27 @@ font-family: ultra;
 }
 .boxFive {
     background: url(./images/brioche-597b5f8.jpg);
+}
+
+.explore {
+display: flex;
+justify-content: center;
+padding-bottom: 80px;
+} 
+
+
+.sectionFive p {
+    padding-top: 80px;
+}
+.sectionFive h1 {
+    padding-bottom: 80px;
+}
+
+.HWW h1 {
+justify-self: center;
+transform: translateY(130px);
+font-size: 40px;
+}
+.HWW p {
+    max-width: 204px;
 }
