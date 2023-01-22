@@ -1,13 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+list-style: none;
 }
-body {
-background-color: yellow;
+p {
+    font-family: 'Oswald', sans-serif;;
+}
+
+h1 {
+    font-family: 'Ultra', serif;
 }
 a {
     text-decoration: none;
+    font-family: 'DM Sans', sans-serif;;
 }
 .black {
     background-color: black;
@@ -24,7 +34,6 @@ a {
 
 
 header{
-    background-color: black;
     height: 100%;
     
 }
@@ -32,28 +41,49 @@ header{
     position: absolute;
     right: 0%;
     width: 60%;
-    height: 96.5%;
+    height: 100%;
 }
 nav {
     display: flex;
-    justify-content: space-between;
-
+    padding: 10px 10%;
+    height: 75px;
+    line-height: 75px;
+    background: black;
 }
-.APR {
+.navbarBrand {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: .5px;
+    font-family: 'Ultra', serif;
+    margin-top: 8px;
+}
+.navList {
     display: flex;
-    gap: 25px;
-    color: white;
-    margin: 20px 80px 20px;
 }
-.APR a {
-    color: white;
+.navItem {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    transition: .4s;
 }
-.contactButton > input {
-    margin: 20px 80px 20px;
-    color: white;
-    background-color: black;
-    padding: 7px 20px;
+.navContact{
+    position: absolute;
+    height: 48px;
+    right: 5%;
     border: 0.5px solid gray;
+    margin: 10px;
+    padding: 0px 20px;
+    line-height: 50px;
+}
+.navItem:hover {
+border-bottom: 2px solid rgba(245, 211, 171, 1); 
+}
+.navLink {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
 }
 .sections {
     display: flex;
@@ -61,7 +91,6 @@ nav {
     margin: 40px;
 }
 .left {
-    color: white;
     margin: 80px;
     inline-size: 300px;
 }
@@ -69,24 +98,20 @@ nav {
 font-size: 60px;
 margin: 20px 0px 20px 0px;
 }
-/* .downButton {
-    background-color: black;
-    align-items: center;
-    cursor: pointer;
-} */
 .downbutt {
     display: flex;
     justify-content: center;
 }
 .bakerPhoto {
     position: absolute;
-    right: 150px;
+    height: 501px;
+    left: 55%;
+    top: 25%;
 }
 
-
+/* 1 */
 .sectionOne {
     display: flex;
-    background-color: rgba(245, 211, 171, 1);
 }
 .BSMphotos{
 width: 40%;    
@@ -133,16 +158,11 @@ gap: 20px;
 .LastViewBackRight :nth-child(4) {
     padding: 10px 0px;
 }
-
-
-
-.sectionTwo{
-    background-color: rgba(245, 211, 171, 1);
-}
 .animBoxs {
     display: flex;
     place-content: center;
 }
+/* 2 */
 .sectionTwoH {
     display: flex;
     justify-content: center;
@@ -156,29 +176,30 @@ margin: 18px;
     width: 370px;
     height: 400px;
     display: grid;
-    /* justify-content: center; */
-    /* align-items: center; */
     place-content: center;
     padding: 40px;
     margin-bottom: 200px;
+    background-image: url(./images/yellowDott.png);
+    background-repeat: no-repeat;
+    background-position-x: 370px;
 }
 .box:hover {
     width: 400px;
     height: 416px;
     transform: translateY(-6px);
     background-color:rgba(158, 173, 141, 1);
-    transition: 0s;
+    transition: 2s;
     background-image: url(./images/yellowDott.png);
     background-repeat: no-repeat;
     background-position-x: right;
+   
 
 }
-
+/* 3 */
 .sectionThree {
     display: flex;
     width: 100%;
     height: 500px;
-    display: flex;
     background-image: url(./images/Group\ 3.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -201,20 +222,13 @@ margin: 18px;
     box-shadow: 0px 0px 1px 4px white;
     border-radius: 50%;
 }
-.sectionThree  > h1 {
-    color: white;
-}
-.sectionThree > p {
-    color: white;
-}
 .sectionThreeH {
     margin: 200px 0px 0px 300px;
     max-width: 400px;
-    color: white;
 }
 
 
-
+/* 4 */
 .sectionFour > h1 {
     max-width: 400px;
     margin: 0px 0px 40px 160px;
@@ -243,7 +257,6 @@ margin: 18px;
 .boxOne {
     grid-column-start: span 2;
     width: 95%; 
-    color: white;
     background-image: url(./images/assortment-baked-bread-scaled.jpg); 
 }
 .boxOne .boxOneH {
@@ -277,7 +290,6 @@ margin: 18px;
 font-size: 40px;
 font-family: ultra;
 }
-
 .boxTwo {
     background: url(./images/Country-White-Bread_.jpg);
     background-size: contain;
@@ -291,21 +303,22 @@ font-family: ultra;
 .boxFive {
     background: url(./images/brioche-597b5f8.jpg);
 }
-
 .explore {
 display: flex;
 justify-content: center;
 padding-bottom: 80px;
 } 
 
-
+/* 5 */
 .sectionFive p {
     padding-top: 80px;
 }
 .sectionFive h1 {
     padding-bottom: 80px;
 }
-
+.animBoxs {
+    margin: 0px 120px;
+}
 .HWW h1 {
 justify-self: center;
 transform: translateY(130px);
@@ -313,4 +326,351 @@ font-size: 40px;
 }
 .HWW p {
     max-width: 204px;
+}
+
+/* 6 */
+.sectionSixBoxs {
+    width:  80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    justify-items: center;
+    gap: 34px 0px;
+    margin: 40px 0px 40px  150px ;
+}
+.ESDR {
+    height: 375px;
+    width: 270px;
+    background-color: grey;
+}
+.box1 {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    width: 570px;
+    height: 100%;
+}
+.sectionSix > h1 {
+    max-width: 617px;
+    margin: 0px 0px 40px 160px;
+}  
+.sectionSix > p {
+    color: white;
+    padding: 50px 40px 0px 160px;
+}
+
+/* 7 */
+.sectionSeven {
+    display: flex;
+    place-content: center;
+    padding-top: 120px;
+}
+
+/* 8 */
+.sectionEight {
+    text-align: center;
+    padding: 80px 20px;
+}
+.sectionEightBoxs {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.eightBox {
+    background-color: white;
+    padding: 10px;
+}
+.eightBox:hover {
+    width: 400px;
+    height: 416px;
+    transform: translateY(-6px);
+    background-color:rgba(158, 173, 141, 1);
+    transition: 1s;
+}
+
+/* 9 */
+.sectionNine {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+#contact {
+    padding-top: 80px;
+}
+.cont {
+    display: flex;
+    margin: 80px 120px 0px 0px;
+    box-sizing: content-box;
+}
+.icon {
+    width: 48px;
+    height: 48px;
+    margin: 120px 40px 0px 40px;
+}
+.text {
+    margin: 120px 0px 0px 80px;
+}
+
+/* 10 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+.line {
+    margin-left: 10%;
+    height: 1px;
+    width: 80%;
+    background-color:rgba(255, 255, 255, 1);
+}
+.footer2 {
+    color: rgba(255, 255, 255, 0.503);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+
+
+
+@media (max-width: 375px) {
+.shapes {
+display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navContact{
+position: relative;
+border: none;
+margin-bottom: 15px;
+top: 15px;
+right: 5px;
+}   
+.navList{
+    display: grid;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    z-index: 11;
+    transition: 1s;
+}
+nav .navbarToggle {
+    display: grid !important;
+}
+
+
+header {
+    padding-bottom: 20px;
+}
+.sections {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0%;
+}
+.left  {
+    margin: 50px;
+}
+.bakerLogo {
+width: 90%;
+left: 5px;
+margin-left: 0px;
+}
+.bakerPhoto {
+    left: 45px;
+    height: 250px;
+    top: 18%;
+}
+.h1 {
+    font-size: 40px;
+}
+/* პირველი სექცია */
+.sectionOne {
+    display: grid;
+}
+.BSMphotos {
+    height: 426px;
+    width: 329px;
+    margin: 80px 0px 0px 50px;
+}
+.BSM {
+    margin: 40px 0px 200px 40px;
+}
+
+/* მეორე სექცია */
+.box {
+    min-width: 180px;
+}
+.fresh  {
+    position: absolute;
+    width: 85%;
+    background-color:rgba(158, 173, 141, 1) ;
+}
+.box:hover {
+position: absolute;
+z-index: 2;
+width: 80%;
+height: 416px;
+}
+
+.sectionThree {
+    display: grid;
+    background-color: black;
+    background-image: none;
+}
+.audio {
+    margin: 70px 110px;
+    padding: 0px 40px 20px 40px;
+
+}
+.sectionThreeH{
+    background: black;
+    margin: 0px;
+    padding: 20px;
+    width: 98%;
+    height: 100%;
+}
+.sectionFour h1 {
+    
+    margin: 10px;
+}
+.sectionFour p {
+    padding: 80px 10px 0px;
+}
+.sectionFourBoxs {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}  
+.boxOne {
+    width: 375px;
+} 
+.explore {
+    margin-top: 40px;
+}
+
+.sectionFive h1 {
+    max-width: 300px;
+    margin-left: 40px;
+    text-align: center;
+}
+.animBoxs {
+    max-width: 375px;
+}
+.HWW {
+    min-width: 120px;
+}
+.baking {
+    position: absolute;
+    z-index: 1;
+    width: 85%;
+    background-color:rgba(158, 173, 141, 1);
+}
+
+.sectionSix p {
+    padding: 20px;
+} 
+.sectionSix h1 {
+    margin: 20px;
+}
+.sectionSixBoxs {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 15px;
+}
+.ESDR {
+    width: 329px;
+}
+
+.sectionSeven {
+    display: grid; 
+    padding-left: 40px;
+}
+.sectionSeven img {
+    max-width: 375px;
+}
+.sectionEightBoxs{
+    max-width: 375px;
+    overflow: hidden;
+}
+.box22  {
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    background-color:rgba(158, 173, 141, 1) ;
+}
+.eightBox:hover {
+position: absolute;
+z-index: 2;
+width: 85%;
+height: 350px;
+}
+.sectionNine {
+    display: grid;
+}
+.sectionNine img {
+    max-width: 300px;
+}
+.naniImage {
+    margin: 0px;
+    padding: 0px;
+    max-height: 375px;
+}
+.cont {
+    display: grid;
+}
+.footer {
+    text-align: center;
+    display: grid;
+    gap: 80px;
+}
+
+
+nav .navbarToggle {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+nav .navbarToggle .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffff;
+    border-radius: 10%;
+    transition: .5s;
+}
+
+nav .navList {
+    transform: translateY(-400px);
+} 
+}
+input {
+    display: none;
+}
+input:checked  ~  nav .navList {
+    transform: translateY(0px);
+}
+input:checked  ~ nav .navbarToggle {
+    margin-top: 35px;
+}
+input:checked ~ nav .navbarToggle .bar:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+}
+input:checked ~ nav .navbarToggle .bar:nth-child(2){
+    display: none;
+}
+input:checked ~ nav .navbarToggle .bar:nth-child(3){
+    transform: rotate(-45deg);
 }

@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <img class="shapes" src="./images/shapes1.png" alt="shapes">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bakery</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header class="black">
+            <img class="shapes" src="./images/shapes1.png" alt="shapes">
+            
+            
+            <!-- <nav>
+                <div class="APR white">
+                    <h3>BKR</h3>
+                    <a href="#about">About</a>
+                    <a href="#product">Products</a>
+                    <a href="#recipes">Recipes</a>
+                </div>
+                <form class="contactButton" action="https://google.com";  >
+                    <input type="submit" value="CONTACT" />
+                </form>
+            </nav> -->
+            
+            
+        <input type="checkbox" id="toggle">
         <nav>
-            <div class="APR">
-                <h3>BKR</h3>
-                <a href="">About</a>
-                <a href="">Products</a>
-                <a href="">Recipes</a>
-            </div>
-            <form class="contactButton" action="https://google.com">
-                <input type="submit" value="CONTACT" />
-            </form>
-            <!-- <button class="contactButton" type="button"; onclick="location.href='https://google.com'">CONTACT</button>    -->
+            <a class="navbarBrand">
+                BKR
+            </a>
+            
+            <label class="navbarToggle" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                
+            </label>
+            
+            <ul class="navList">
+
+                
+                <li class="navItem">
+                    <a class="navLink" href="#about">About</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#product">Products</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#recipes">Recipes</a>
+                </li>
+                
+                <li class="navItem navContact">
+                    <a class="navLink" href="#cont">CONTACT</a>
+                </li>
+
+            </ul>
+
+
         </nav>
+
+
+
+    
+
+
+
+        
         <div class="sections">
-        <section class="left">
+        <section class="left white">
         <p>Sience 1984</p>
         <h1>Fresh 
             Bakery  
@@ -32,20 +77,20 @@
         </section>
         <section class="right">
             <img class="bakerLogo" src="./images/Group 111.png" alt="back">
-            <img class="bakerPhoto" src="./images/Bitmap.png" alt="baker">
+            <img class="bakerPhoto" src="./images/baghdo_origin_thumbnail (1).png" alt="baker">
         </section>
-        </div>
-        <a class="downbutt" href=""><img src="./images/down.png" alt="down"> </a>
+        </div >
+        <a class="downbutt" href="https://google.com"><img src="./images/down.png" alt="down"> </a>
         </div>
         </header>
 
 
-        <section class="sectionOne"> 
+        <section class="sectionOne peach"> 
             <div class="BSMphotos">
                 <img src="./images/Group 2.png" alt="">
             </div>
             <div class="BSM">
-                <p>About Us</p>
+                <p id="about">About Us</p>
                 <h1>Baking Special Moments</h1>
                 <p>01</p>
                 <div class="LastViewBack">
@@ -67,7 +112,7 @@
         </section>
 
 
-        <section class="sectionTwo">
+        <section class="sectionTwo peach">
             <p class="sectionTwoH">Our Features</p>
             <h1 class="sectionTwoH">Baked With Love</h1>
             <div class="animBoxs">
@@ -89,18 +134,14 @@
             </div>
         </section>
         <section class="sectionThree">
+
         <div class="audio">
-            <!-- <audio controls>
-                <source  src="./audio/bakery-Yshwa.mp3" type="audio/ogg">
-            </audio> -->
             <button id="play" type="button" onClick="Play()"><img src="./images/play.png" alt=""> </button>
             <audio controls id="audioval">
             <source src="./audio/bakery-Yshwa.mp3" type="audio/mp3">
             </audio>
-
-            <!-- <button id="play"><img src="./images/play.png" alt="play"></button> -->
         </div>
-        <div class="sectionThreeH">
+        <div class="sectionThreeH white">
                 <p>Our Video</p>
                 <h1 class="h56">Story Behind 
                     Every Piece</h1> 
@@ -109,13 +150,13 @@
 
 
         <section class="sectionFour peach">
-        <p>Our Products</p>
+        <p id="product">Our Products</p>
         <h1 class="h56">Baked Fresh
             Every Morning</h1>
         <div class="sectionFourBoxs">
-            <div class="BFEM boxOne" >
+            <div class="BFEM boxOne white" >
                 <div class="boxOneH">
-                <h6>Bakery</h6>
+                <h5>Bakery</h5>
                 <h1>Homemade 
                     Bread</h1>
                 <p>Flows by their place and supplies it with the necessary regelialia.</p>
@@ -124,7 +165,7 @@
             <div class="BFEM boxTwo">
                 <footer>
                     <section>
-                        <h5>Bakery</h5>
+                        <p>Bakery</p>
                         <h2>Bread</h2>
                     </section>
                     <section class="price">
@@ -135,7 +176,7 @@
             <div class="BFEM boxThree">
                 <footer>
                     <section>
-                        <h5>Pastry</h5>
+                        <p>Pastry</p>
                         <h2>Cupcake</h2>
                     </section>
                     <section class="price">
@@ -145,7 +186,7 @@
             </div>
             <div class="BFEM boxFour"> <footer>
                 <section>
-                    <h5>Sweety</h5>
+                    <p>Sweety</p>
                     <h2>Biscuits</h2>
                 </section>
                 <section class="price">
@@ -154,7 +195,7 @@
             </footer></div>
             <div class="BFEM boxFive"> <footer>
                 <section>
-                    <h5>Pastry</h5>
+                    <p>Pastry</p>
                     <h2>Brioche</h2>
                 </section>
                 <section class="price">
@@ -193,9 +234,94 @@
                     <p>Copy said could convince her and so it didn’t take long.</p>
                 </div>
             </div>
+        </section>
 
-        </sectionFive>
 
+        <section class="sectionSix black">
+            <p id="recipes">Our Recipes</p>
+            <h1 class="h56 white">Explore Sweet & 
+                Delicious Recipes</h1>
+            <div class="sectionSixBoxs">
+                <div class="ESDR box1"></div>
+                <div class="ESDR box2"></div>
+                <div class="ESDR box3"></div>
+                <div class="ESDR box4"></div>
+                <div class="ESDR box5"></div>
+            </div>
+            <div class="explore">
+                <img src="./images/ExploreBlack.png" alt="Explore">
+            </div>   
+        </section>
+
+        <section class="sectionSeven peach">
+            <div>
+            <img src="./images/Group 5.png" alt="">
+            </div>
+            <div>
+            <img src="./images/Group 6.png" alt="">
+            </div>
+        </section>
+
+        <section class="sectionEight peach">
+            <p>Testimonials</p>
+            <h1 class="h56">People Say About 
+                Our Bakery</h1>
+            <div class="sectionEightBoxs">
+                <div class="eightBox  1">
+                    <img src="./images/Group 7.png" alt="">
+                </div>
+                <div class="eightBox box22">
+                    <img src="./images/Group 8.png" alt="">
+                </div>
+                <div class="eightBox 3">
+                    <img src="./images/Group 9.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionNine peach">
+            <div class="naniImage">
+                <img src="./images/Group 10.png" alt="">
+            </div>
+            <div>
+                <p id="contac">Get in Touch</p>
+                <h1 class="h56">Contact 
+                    With Us</h1>
+                    <div class="cont">
+                        <img class="icon" src="./images/Group 13.png" alt="">
+                        <img src="./images/Group 11.png" alt="">
+                        <img class="icon" src="./images/Group 14.png" alt="">
+                        <img src="./images/Group 12.png" alt="">
+                    </div>
+                    <div class="text">
+                        <img src="./images/Text.png" alt="">
+                    </div>
+            </div>
+        </section>
+
+        <footer class="black">
+            <section class="footer">
+                <div>
+                    <h1 class="h56 white">BKR</h1>
+                </div>
+                <div><img src="./images/Group 16.png" alt=""></div>
+                <div><img src="./images/Group 17.png" alt=""></div>
+                <div><img src="./images/Group 18.png" alt=""></div>
+            </section>
+            <div class="line"></div>
+            <section class="footer2">
+                <div>
+                <p>Copyright © 2020 Laaqiq. All Rights Reserved.</p>
+                </div>
+                <div class="foot">
+                    <p>Terms of Use</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+            </section>
+        </footer>
+    
+        
 
 
 <script src="./script.js"></script>
